@@ -5,20 +5,20 @@ import End from "./End";
 import Game from "./Game";
 
 function App() {
-  return (
-      <BrowserRouter>
-        <Fragment>
-          <Routes>
-            <Route path="/" element={<Home/>}/>
+    return (
+        <BrowserRouter>
+            <Fragment>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
 
-            <Route path="/end" element={<End/>}/>
+                    <Route path="/end" element={<End/>}/>
 
-            <Route path="/game" element={<Game/>}/>
+                    <Route path="/game" element={<Game/>}/>
 
-          </Routes>
-        </Fragment>
-      </BrowserRouter>
-  )
+                </Routes>
+            </Fragment>
+        </BrowserRouter>
+    )
 }
 
 export default App;
