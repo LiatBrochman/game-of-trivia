@@ -1,6 +1,7 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 import axios from "axios";
 import React from "react";
+import '../Game.css';
 
 
 export const run = createAsyncThunk('api/run', async () => {
@@ -54,7 +55,8 @@ const apiSlice = createSlice({
                                 isCorrect: false,
                                 className: "notSelected"
                             }))
-                            return answers
+
+                            return shuffle(answers)
                         }
 
                     )()
